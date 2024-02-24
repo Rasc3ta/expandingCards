@@ -1,14 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Expanding Cards</title>
 
+    <style>
+      :root {
+        --paleYellow: #fffd77;
+        --pinkishRed: #ff4365;
+        --black: #030301;
+        --turquoise: #00d9c0;
+        --irisBlue: #454ade;
+      }
+
+      body {
+
+        height: 90vh;
+        background-color: black;
+      }
+
+            header {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        margin-top: 10rem;
+      }
+
+      h1 {
+        color: white;
+        margin-bottom: 5rem;
+        font-size: 3rem;
+      }
+
+      main {
+        border-radius: 3rem;
+        border: white 1rem solid;
+        margin: auto;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+
+      }
+
+      .card1 {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        flex: 1;
+        background-color: var(--paleYellow);
+        height: 400px;
+      }
+
+      .card2 {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        flex: 1;
+        background-color: var(--pinkishRed);
+        height: 400px;
+      }
+
+      .card3 {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        flex: 1;
+        background-color: var(--black);
+        height: 400px;
+      }
+
+      .card4 {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        flex: 1;
+        background-color: var(--turquoise);
+        height: 400px;
+      }
+
+      .card5 {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        flex: 1;
+        background-color: var(--irisBlue);
+        height: 400px;
+      }
+
+      .card {
+        transition: flex .5s ease-in-out;
+      }
+
+      .card:first-child {
+        border-radius: 2rem 0rem 0rem 2rem;
+      }
+
+      .card:last-child {
+        border-radius: 0rem 2rem 2rem 0rem;
+      }
+
+      .active {
+        flex:5;
+      }
     
-</head>
-<body>
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+    <h1>Expanding Cards</h1>
+    </header>
+
     
+    <main>
+      <div class="card card1">Icterine</div>
+      <div class="card card2">Folly</div>
+      <div class="card card3">Black</div>
+      <div class="card card4">Turquoise</div>
+      <div class="card card5">Iris</div>
+    </main>
+
+
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
